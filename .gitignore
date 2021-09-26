@@ -1,1 +1,3 @@
-* .exe
+*.exe
+!Day1/*.exe
+!Day2/*.exe
