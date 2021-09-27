@@ -1,5 +1,7 @@
 {
     "files.associations": {
-        "xstring": "cpp"
-    }
+        "xstring": "cpp",
+        "iostream": "cpp"
+    },
+    "python.pythonPath": "C:\\Users\\RISHABH KUMAR\\AppData\\Local\\Programs\\Python\\Python39\\python.exe"
 }
