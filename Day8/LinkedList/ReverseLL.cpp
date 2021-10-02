@@ -42,6 +42,8 @@ void display(node* head){
 
     cout<<endl;
 }
+
+//using iteration
 node* reverse(node* &head){
     node* prevptr = NULL;
     node* currptr = head;
