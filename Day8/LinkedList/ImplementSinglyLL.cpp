@@ -43,6 +43,22 @@ void insertAtBeginning(node* &head,int val){
     head = n;
 }
 
+//deleting
+
+void deleteLL(node* &head,int val){
+    node *temp = head;
+
+    while(temp->next->data!=val){
+        temp=temp->next;
+    }
+
+    node* delNode = temp->next;
+    temp->next = temp->next->next; //to delete nth node we have to acces n-1th node and in next of n-1th node just point in to n+1th node
+    delete delNode;
+
+
+}
+
 //displaying
 
 void display(node* head){
@@ -87,8 +103,10 @@ int main(){
     display(head);
     insertAtBeginning(head,0);
     display(head);
-    searching(head,5);
-    searching(head,2);
+    //searching(head,5);
+    //searching(head,2);
+    deleteLL(head,2);
+    display(head);
 
    
 return 0;
