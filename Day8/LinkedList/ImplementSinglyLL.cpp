@@ -1,6 +1,8 @@
 #include<iostream>
 using namespace std;
 
+//implementing linked list
+
 class node{
     public:
     int data;
