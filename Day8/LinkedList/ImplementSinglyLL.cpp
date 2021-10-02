@@ -45,7 +45,23 @@ void insertAtBeginning(node* &head,int val){
 
 //deleting
 
+void deleteAtHead(node* &head){
+    node *delNode = head;
+    head = head->next;
+
+    delete delNode;
+}
+
 void deleteLL(node* &head,int val){
+
+    if(head == NULL){
+        return;
+    }
+
+    if(head->next == NULL){
+        deleteAtHead(head);
+        return;
+    }
     node *temp = head;
 
     while(temp->next->data!=val){
@@ -105,7 +121,8 @@ int main(){
     display(head);
     //searching(head,5);
     //searching(head,2);
-    deleteLL(head,2);
+   // deleteLL(head,2);
+   deleteAtHead(head);
     display(head);
 
    
