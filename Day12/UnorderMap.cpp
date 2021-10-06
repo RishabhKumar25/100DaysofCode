@@ -22,5 +22,12 @@ int main(){
 
 //rest things are same as map
 
+/*
+
+No unique keys
+
+
+*/
+
 return 0;
 }
