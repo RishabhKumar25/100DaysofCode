@@ -9,6 +9,7 @@ using namespace std;
 //unique values
 //implementation using Hash Table
 // jo difference map and unorder maps me hota hai wo same difference sets and unorder sets me hota hai
+//cant use complex data type like pairs
 
 int main(){
 
@@ -46,3 +47,17 @@ int main(){
    
 return 0;
 }
+
+
+/* 
+Multiset
+
+multiset<string> s 
+
+time complexity becoms //log(n)
+duplicate values allowed
+
+find value return iterator of first occurence
+if we pass it in erase then delete only that occurence
+and if we pass that value then delete all occurence
+*/
