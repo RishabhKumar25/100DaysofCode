@@ -5,6 +5,8 @@
  using namespace std;
 
 /* Link list node  */
+
+
 struct Node {
 	int data;
 	struct Node* next;
