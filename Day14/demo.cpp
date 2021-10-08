@@ -4,7 +4,7 @@
 #include<unordered_set>
  using namespace std;
 
-/* Link list node */
+/* Link list node  */
 struct Node {
 	int data;
 	struct Node* next;
